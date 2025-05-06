@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veeyes Dental Hospital</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #f5e6d1;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            color: #0bafc1;
+            font-size: 1.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #0bafc1;
+        }
+        
+        .appointment-btn {
+            background-color: #1a4551;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        
+        /* kids section */
+        .kids {
+            background-color: #1a4551;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .kids h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .kids p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .tooth-icon {
+            position: absolute;
+            width: 80px;
+        }
+        
+        .tooth-left {
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .tooth-right {
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        /* Content section */
+        .content {
+            padding: 3rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a4551;
+            color: white;
+        }
+        
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+        
+        .image-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .image-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        .content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .content ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .content ul li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .content ul li:before {
+            content: "•";
+            margin-right: 0.5rem;
+        }
+        
+        
+        /* Responsive design */
+        @media (max-width: 992px) {
+            nav ul {
+                display: none;
+            }
+            
+            .hamburger {
+                display: block;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            
+            .content {
+                flex-direction: column;
+            }
+            
+            .text-content {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .tooth-icon {
+                width: 60px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .kids h2 {
+                font-size: 2rem;
+            }
+            
+            .kids p {
+                font-size: 1rem;
+            }
+            
+            .tooth-icon {
+                width: 40px;
+            }
+            
+            .tooth-left {
+                left: 5%;
+            }
+            
+            .tooth-right {
+                right: 5%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .tooth-icon {
+                display: none;
+            }
+            
+            .logo h1 {
+                font-size: 1.2rem;
+            }
+            
+            .logo img {
+                height: 40px;
+            }
+            
+            .appointment-btn {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/api/placeholder/50/50" alt="Veeyes Dental Logo">
+            <h1>veeyes dental <span style="display: block; font-size: 0.8rem; color: #666;">Hospital</span></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="appointment-btn">Appointment</a>
+    </header>
+    
+    <section class="hero">
+        <img src="/api/placeholder/80/80" alt="Tooth character with crown" class="tooth-icon tooth-left">
+        <h2>Kids are cool!</h2>
+        <p>We love our tiny toothbrush warriors! They'll love our kid-friendly amenities.</p>
+        <img src="/api/placeholder/80/80" alt="Tooth character with crown" class="tooth-icon tooth-right">
+    </section>
+    
+    <section class="content">
+        <div class="text-content">
+            <h3>Why is Pediatric Dentist Important?</h3>
+            <ul>
+                <li><strong>Catch Problems Early:</strong> Prevent bigger dental issues in the future.</li>
+                <li><strong>Build Healthy Habits:</strong> Teach Kids & Parents, the importance of oral hygiene for lifelong benefits.</li>
+                <li><strong>Positive Experiences:</strong> Child-friendly care helps kids feel safe and relaxed.</li>
+            </ul>
+            
+            <h3>Parents to do before child dental visit</h3>
+            <ul>
+                <li><strong>Brush teeth twice daily,</strong> morning and evening.</li>
+                <!-- More list items would go here -->
+            </ul>
+        </div>
+        
+        <div class="image-content">
+            <img src="/api/placeholder/400/320" alt="Dentist examining child's teeth">
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,1131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Inner page styles */
+.page-hero {
+    height: 65vh;
+    min-height: 100px;
+    background-color: #203c41;
+    background-image:  url('../images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px; /* To account for fixed header */
+}
+
+.page-hero-content {
+    text-align: center;
+    color: #ECD8B6;
+}
+
+.page-hero-content h1 {
+    font-size: 54px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+/* Inner page content styling */
+.services-page, .facilities-page, .gallery-page, .blog-page, .careers-page, .offers-page {
+    padding: 60px 80px;
+    background-color: #F0EFE7;
+}
+
+.services-page-content, .facilities-page-content, .gallery-page-content, .blog-page-content, .careers-page-content, .offers-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-page-content h2, .facilities-page-content h2, .gallery-page-content h2, .blog-page-content h2, .careers-page-content h2, .offers-page-content h2 {
+    color: #203c41;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.services-page-content h3, .facilities-page-content h3, .gallery-page-content h3, .blog-page-content h3, .careers-page-content h3, .offers-page-content h3 {
+    color: #0da2a9;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.services-page-content p, .facilities-page-content p, .gallery-page-content p, .blog-page-content p, .careers-page-content p, .offers-page-content p {
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.service-item {
+    margin-bottom: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 200px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .services-page, .facilities-page, .gallery-page, .blog-page, .careers-page, .offers-page {
+        padding: 40px 20px;
+    }
+}
+
+/* Create a class for headings to use Libre Baskerville */
+h1, h2, h3, .tagline h2, .services h2, .form-container h2, .footer-form h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700; /* Bold */
+}
+
+/* Set specific font sizes for main titles */
+h1, .tagline h2, .services h2, .form-container h2, .footer-form h2 {
+    font-size: 60px; /* Requested size for titles */
+}
+
+/* Adjust other text elements to use Montserrat */
+p, a, input, textarea, button, label, .logo-text, nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+
+.hero {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/landing_page.png');
+    background-size: cover;
+    background-position: center;
+    /* align-items: center;  */
+}
+
+.hero-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.hero-text {
+    flex: 1;
+    /* background-color: #203c41; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin-top: 20%;
+}
+
+.hero-text h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    color: #ECD8B6;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+}
+
+.hero-image {
+    flex: 1;
+    background-image: url('/path/to/family-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+    
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-text, .hero-image {
+        flex: none;
+        height: 50vh;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+}
+
+/* .hero-image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .tagline {
+    background-color: #F0EFE7;
+    height: 360px;
+}
+
+.tagline h2 {
+    color: #203c41;
+    font-size: 36px;
+    margin: 20px;
+    font-family: 'Libre Baskerville';
+    font-weight:bold
+    
+}
+
+.tagline p {
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 30;
+} */
+
+/* .tagline {
+    background-color: #F0EFE7;
+    height: 360px;
+    background-blend-mode: overlay;
+    height: auto;
+    padding: 60px 30px;
+    position: relative;
+    text-align: center;
+    padding: 30% 10%;
+}
+
+.tagline h2 {
+    color: #1c414c;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 5px 0;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+
+.tagline p {
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    margin: 5px auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+} */
+
+.tagline {
+    background-color: #F0EFE7;
+    height: 350px;
+    padding: 50px 50px; /* Adjusted padding */
+    /* position: relative; */
+    text-align: center;
+    padding-top: 5% !important;
+}
+
+/* Main heading - first line */
+.tagline h2:nth-child(1) {
+    color: #1c414c;
+    font-size: 38px;
+    margin: 0 0 10px 0; /* Space between first and second line */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    row-gap: 10px;
+}
+
+/* Main heading - second line */
+.tagline h2:nth-child(2) {
+    color: #1c414c;
+    font-size: 38px;
+    margin: 0 0 50px 0; /* Space after the heading */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* First paragraph */
+.tagline p:nth-child(3) {
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 0 5px 0; /* Space between first and second paragraph */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+/* Second paragraph */
+.tagline p:nth-child(4) {
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+.about {
+    position: relative;
+    background-color: #203c41;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 120vh;
+    min-height: 350px;
+    background-image: url('/images/baby_smile.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.about-image {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    /* opacity: 0.2; */
+    background-image: url('/images/baby_smile.png');
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 0;
+}
+
+.experience-container{
+    margin-top: 45%;
+    margin-left: -6%;
+}
+.experience {
+    width: 200px;
+    height: 150px;
+    background-color: #ecd8b6;
+    color: #203c41;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 20px;
+    font-weight: bold;
+    /* margin-top: 100% !important; */
+    /* margin-right: 90%; */
+    /* margin-bottom: 0%; */
+}
+
+.experience .number {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.experience .text {
+    font-size: 20px;
+    /* text-align: center; */
+    font-size:medium;
+    font-weight: lighter;
+}
+
+.about-text {
+   
+    margin-left: 40%;
+    width: 45%;
+    padding: 80px 60px 60px 0;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.about-text p {
+    /* text-align:initial; */
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #0da2a9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .left-column {
+        width: 100%;
+        padding: 40px 0 0 0;
+    }
+    
+    .about-text {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    
+    .about-text h2 {
+        font-size: 36px;
+    }
+}
+
+.services {
+    padding: 50px 80px;
+    background-color: #F0EFE7; /* Beige background color from the screenshots */
+    position: relative;
+}
+
+.service-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-text-column {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.service-image-column {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.services h2 {
+    color: #203c41; /* Dark teal color */
+    font-size: 46px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.service-section {
+    margin-bottom: 30px;
+}
+
+.service-section h3 {
+    color: #203c41;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.service-section p {
+    color: #203c41;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.family-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Kids_and_family.png'); 
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #203c41;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #0da2a9;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+    }
+    
+    .service-text-column {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .services h2 {
+        font-size: 36px;
+    }
+    
+    .contact-icons {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        transform: none;
+    }
+}
+
+/* ################################################################################################### */
+/* appointment fom */
+/* Main styling for the appointment section */
+.contact-form-section {
+    display: flex;
+    background-image: url('/images/appointment_page_bg.png');
+    background-size: cover;
+    position: relative;
+    color: white;
+    min-height: 680px;
+    overflow: hidden;
+}
+
+/* Form container styles */
+.form-container {
+    /* background-image: url('/images/appointment_bg.png'); */
+    flex: 1;
+    padding: 40px 60px;
+    /* background-color: rgba(32, 60, 65, 0.85); Dark teal with transparency */
+    max-width: 65%;
+    margin-left: -7%;
+}
+
+.form-container h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ECD8B6;
+    
+}
+
+.form-container h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 70px;
+    font-weight: normal;
+}
+
+/* Form styling */
+.form-row {
+    display: flex;
+    gap: 30px;
+    row-gap: 10px;
+    margin-bottom: 15px;
+    border-radius: 8%;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F0EFE7; /* Light beige background */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Checkbox styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #0da2a9; /* Teal button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0b8a90;
+}
+
+/* Contact tabs on right side */
+.contact-tabs {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 10;
+}
+
+.contact-tab {
+    display: flex;
+    align-items: center;
+}
+
+.tab-arrow {  
+    width: 40px;
+    height: 60px;
+    background-color: #0da2a9; /* Teal arrow */
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    margin-left: -13%;
+}
+.tab-arrow i {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tab-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 15px 20px;
+    border-radius: 0 5px 5px 0;
+    min-width: 300px;
+    color: #333;
+    margin-left: -3%;
+}
+
+/* .tab-arrow i {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+
+/* Icons */
+.location-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230da2a9"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>');
+}
+
+.phone-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230da2a9"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>');
+}
+
+.email-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230da2a9"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>');
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .form-container {
+        max-width: 55%;
+    }
+    
+    .tab-content {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-form-section {
+        flex-direction: column;
+    }
+    
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 30px;
+    }
+    
+    .contact-tabs {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .contact-tab {
+        width: 100%;
+    }
+    
+    .tab-arrow {
+        width: 30px;
+        height: 40px;
+    }
+    
+    .tab-content {
+        min-width: 0;
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-container h2 {
+        font-size: 32px;
+    }
+    
+    .form-container h3 {
+        font-size: 20px;
+    }
+    
+    .contact-tabs {
+        gap: 15px;
+    }
+    
+    .floating-contact {
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .contact-circle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* ########################################################################################## */
+ /* kids section */
+ .kids {
+    background-color: #1a4551;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.kids h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.kids p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.tooth-icon {
+    position: absolute;
+    width: 80px;
+}
+
+/* .tooth-left {
+    transform: rotate(27deg);
+  }
+  
+  .tooth-right {
+    transform: rotate(-27deg);
+  } */
+  
+.tooth-left {
+    left: 10%;
+    top: 50%;
+    transform: rotate(-27deg);
+}
+
+.tooth-right {
+    right: 10%;
+    top: 50%;
+    transform: rotate(27deg);
+}
+
+/* Content section */
+.content {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a4551;
+    color: white;
+}
+
+.text-content {
+    margin-left: -5%;
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+   left: 20% !important;
+}
+
+.image-content img {
+    max-width: 500px;  /* Set an absolute max width */
+    width: 100%;        /* Take up 80% of parent width */
+    height: auto;      /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.content ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.content ul li {
+    margin-bottom: 1rem;
+    /* display: flex;
+    align-items: flex-start; */
+}
+
+.content ul li:before {
+    content: "•";
+    margin-right: 0.5rem;
+}
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+    nav ul {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .tooth-icon {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kids h2 {
+        font-size: 2rem;
+    }
+    
+    .kids p {
+        font-size: 1rem;
+    }
+    
+    .tooth-icon {
+        width: 40px;
+    }
+    
+    .tooth-left {
+        left: 5%;
+    }
+    
+    .tooth-right {
+        right: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .tooth-icon {
+        display: none;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .appointment-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* ############################################################################################## */
+/* Add this to your style.css file */
+
+.testimonials-section {
+    /* padding: 50px 0; */
+    background-color: #f9f5f0;
+    text-align: center;
+    /* margin-bottom: 20%; */
+}
+
+.testimonials-section .container {
+    /* max-width: 900px; */
+    /* margin-left: 10%; */
+    /* padding: 0 20px; */
+    /* max-height: 100%; */
+    
+}
+
+.testimonials-section .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    color: #0e3b43;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonials-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    /* overflow-x: hidden; */
+    /* padding: 20px 0; */
+}
+
+.testimonial-card {
+    column-gap: 15px !important;
+    position: relative;
+    width: 330px;
+    height: 60vh;
+    padding: 30px 25px;
+    background-color: #bce6e8;
+    /* border-radius: 15px; */
+    border-radius: 0 40px 0 40px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:nth-child(2) {
+    background-color: #c5d8d9;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black !important;
+    opacity: 0.3;
+    font-size: 1.5rem;
+    padding: 2px 6px;
+    background-color: #0e3b43;
+    border-radius: 40px;
+}
+
+.testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #0e3b43;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 35px 20px ;
+}
+hr{
+    margin-top: 70px;
+}
+
+.testimonial-author {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #0e3b43;
+    margin-bottom: 10px;
+}
+.triangle{
+    height: 30px;
+    width: 30px;
+    margin-left: 98%;
+    margin-right: 0%;
+    margin-top: -26px;
+}
+
+.card-decoration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('/images/decoration-dot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-dot.active {
+    background-color: #16c1d7;
+}
+
+/* Contact icons on the right */
+.contact-fixed {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #16c1d7;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+    background-color: #0e3b43;
+    transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .testimonials-carousel {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+    }
+    
+    .testimonials-carousel::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .testimonial-card {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 90%;
+    }
+}
+/* ############################################################################################### */

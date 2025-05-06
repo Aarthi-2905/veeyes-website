@@ -1,0 +1,117 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="mb-4">Our Locations</h3>
+                
+                <div class="location mb-4">
+                    <h4>Bus stop, Sathy Rd, Near Ramakrishna Mill,</h4>
+                    <p>Ramakrishnapuram, Ganapathy,</p>
+                    <p>Coimbatore - 641006</p>
+                    <p>Phone: 0422-4383000, 2533333</p>
+                    <p>Email: info@veeyesdental.com</p>
+                    
+                    <div class="map">
+                        <img src="/images/map_image.jpg" alt="Coimbatore Location Map" class="map-thumbnail" onclick="openMapPopup('coimbatore-map')">
+                    </div>
+                </div>
+                <div class="location mb-4">
+                    <h4>Avinashi – Tiruppur Rd, Murungapalayam,</h4>
+                    <p>Kumar Nagar, Indira nagar, Near CSI Church,</p>
+                    <p>Tiruppur - 641603</p>
+                    <p>Phone: 0421-4333366</p>
+                    <p>Email: info@veeyesdental.com</p>
+                    
+                    <div class="map">
+                        <img src="/images/map_image.jpg" alt="Tiruppur Location Map" class="map-thumbnail" onclick="openMapPopup('tiruppur-map')">
+                    </div>
+                </div>
+                <div id="coimbatore-map" class="map-popup">
+                    <div class="map-popup-content">
+                        <span class="close-popup" onclick="closeMapPopup('coimbatore-map')">&times;</span>
+                        <h3>Coimbatore Location</h3>
+                        <div class="large-map">
+                            <img src="/images/map_image.jpg" alt="Coimbatore Location Large Map">
+                        </div>
+                        <p>Bus stop, Sathy Rd, Near Ramakrishna Mill, Ramakrishnapuram, Ganapathy, Coimbatore - 641006</p>
+                    </div>
+                </div>
+                
+                <div id="tiruppur-map" class="map-popup">
+                    <div class="map-popup-content">
+                        <span class="close-popup" onclick="closeMapPopup('tiruppur-map')">&times;</span>
+                        <h3>Tiruppur Location</h3>
+                        <div class="large-map">
+                            <img src="/images/map_image.jpg" alt="Tiruppur Location Large Map">
+                        </div>
+                        <p>Avinashi – Tiruppur Rd, Murungapalayam, Kumar Nagar, Indira nagar, Near CSI Church, Tiruppur - 641603</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="footer-form">
+                    <h2>Have a question?</h2>
+                    <h3>We are just a message away!</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Message</button>
+                    </form>
+                        <div class="social-container">
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    © 2023 All rights reserved. Veeyes Dental Hospital.
+</div>
+
+<div class="floating-contact">
+    <div class="contact-icon">
+        <i class="fas fa-phone"></i>
+    </div>
+    <div class="contact-icon">
+        <i class="fas fa-envelope"></i>
+    </div>
+    <div class="contact-icon">
+        <a id="whatsapp-float" 
+            href="https://wa.me/1234567890?text=Hi%20there%2C%20I%20want%20to%20know%20more%20about%20your%20services!" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</div>

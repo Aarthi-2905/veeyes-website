@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - Veeyes Dental Hospital</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            body {
+                background-color: #f7f3e9;
+                color: #143642;
+            }
+            
+            /* Header styles */
+            header {
+                background-color: #f7f3e9;
+                padding: 15px 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #e8e0d0;
+            }
+            
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            
+            .logo img {
+                height: 40px;
+                margin-right: 10px;
+            }
+            
+            .logo-text {
+                color: #0aafc8;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 1;
+            }
+            
+            .logo-text span {
+                display: block;
+                font-size: 12px;
+                color: #145163;
+            }
+            
+            nav ul {
+                display: flex;
+                list-style: none;
+            }
+            
+            nav ul li {
+                margin: 0 15px;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: #143642;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+            
+            nav ul li a:hover {
+                color: #0aafc8;
+            }
+            
+            .appointment-btn {
+                background-color: #143642;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background-color 0.3s;
+            }
+            
+            .appointment-btn:hover {
+                background-color: #0aafc8;
+            }
+            
+            /* Hero section with doctors */
+            .hero-section {
+                display: flex;
+                padding: 50px;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f7f3e9;
+            }
+            
+            .hero-image {
+                width: 45%;
+            }
+            
+            .hero-content {
+                width: 50%;
+                text-align: right;
+            }
+            
+            .hero-content h1 {
+                font-family: 'Libre Baskerville', serif;
+                font-size: 40px;
+                color: #143642;
+                margin-bottom: 30px;
+            }
+            
+            .hero-content p {
+                line-height: 1.6;
+                margin-bottom: 15px;
+                color: #143642;
+            }
+            
+            .highlight {
+                font-weight: bold;
+                color: #0aafc8;
+            }
+            
+            /* Journey section */
+            .journey-section {
+                padding: 50px;
+                background-color: #f7f3e9;
+            }
+            
+            .journey-section h2 {
+                font-family: 'Libre Baskerville', serif;
+                font-size: 36px;
+                color: #143642;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            
+            .timeline {
+                position: relative;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            
+            .timeline-item {
+                position: relative;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .year-box {
+                background-color: #143642;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+                z-index: 1;
+                flex-shrink: 0;
+            }
+            
+            .timeline-content {
+                background-color: #143642;
+                color: white;
+                padding: 20px;
+                border-radius: 0;
+                flex-grow: 1;
+            }
+            
+            .timeline-content p {
+                line-height: 1.6;
+                margin: 0;
+            }
+            
+            .conclusion {
+                text-align: center;
+                margin-top: 50px;
+                line-height: 1.6;
+                font-style: italic;
+            }
+            
+            /* Floating contact icons */
+            .floating-contact {
+                position: fixed;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                z-index: 100;
+            }
+            
+            .contact-icon {
+                background-color: #143642;
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px 0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            
+            .contact-icon:hover {
+                background-color: #0aafc8;
+            }
+        </style>
+    </head>
+    <body>
+    
+         <!-- Header will be loaded here -->
+         <div id="header-container"></div>
+        <!-- Hero Section with Doctors -->
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="/api/placeholder/450/500" alt="Dental professionals in white coats" />
+            </div>
+            <div class="hero-content">
+                <h1>"20 Years of Trust"</h1>
+                <p>VEEYES DENTAL HOSPITAL is India's largest state-of-the-art dental facility, dedicated to delivering exceptional care. With over <span class="highlight">20 years of excellence</span>, Veeyes Dental Hospital remains a trusted name in dentistry.</p>
+                <p>Guided by our motto, "Healthy Teeth, Healthy Lifestyle," we strive to help every patient achieve optimal oral health.</p>
+                <p>As one of the first standalone dental hospitals in India to achieve NABH accreditation, we uphold the highest standards of safety and quality in dental care.</p>
+            </div>
+        </section>
+        
+        <!-- Journey Section -->
+        <section class="journey-section">
+            <h2>Our Journey of Excellence</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year-box">2005</div>
+                    <div class="timeline-content">
+                        <p>In 2005, Dr. Ramesh Shanmugam founded Sanjeevi Dental Clinic in Tirupur, Tamil Nadu. This 600-square-foot clinic quickly became known for its expertise in dental and facial surgeries, adopting cutting-edge technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year-box">2012</div>
+                    <div class="timeline-content">
+                        <p>In 2012, the practice expanded into VEEYES DENTAL CARE, with Dr. Ranjana Ramesh joining the team. A new branch was established in Coimbatore, growing into a 2,500-square-foot facility with six operatory rooms. Patients from across Tamil Nadu, including Erode, Ooty, and Salem, sought care here.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="conclusion">Today, VEEYES DENTAL HOSPITAL serves patients from across the state and internationally, providing advanced treatments for facial pain, oral complications, and long-term dental health.</p>
+        </section>
+        
+        <!-- Floating Contact Icons -->
+        <div class="floating-contact">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-calendar"></i>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            // Floating contact functionality
+            $(document).ready(function() {
+                $('.contact-icon').on('click', function() {
+                    if ($(this).find('i').hasClass('fa-phone')) {
+                        alert("Call us at: 0422-4383000");
+                    } else if ($(this).find('i').hasClass('fa-envelope')) {
+                        alert("Email us at: info@veeyesdental.com");
+                    } else if ($(this).find('i').hasClass('fa-calendar')) {
+                        window.location.href = "#appointment";
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
