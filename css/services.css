@@ -3,7 +3,7 @@
 }
 .procedures-section h2 {
     color: #19496b;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
 }
 
 .table {
@@ -54,7 +54,7 @@
 }
 
 .hero-title {
-    color: #153b50;
+    color:  var(--logo-gray) !important;
     font-size: 50px;
     font-weight: 700;
     /* margin-bottom: 30px; */

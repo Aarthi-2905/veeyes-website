@@ -1,5 +1,5 @@
 header {
-    background-color: #ECD8B6;
+    background-color:  var(--dark-beige);
     /* padding: 10px 5px; */
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ header {
 }
 
 /* header {
-    background-color: #ECD8B6;
+    background-color:  var(--dark-beige);
     border-radius: 0 0 25px 25px;
     position: fixed;
     top: 0;

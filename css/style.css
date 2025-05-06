@@ -6,6 +6,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    /* Logo Colors */
+    --logo-blue: #13C2CF;
+    --logo-gray: #183D4A;
+    --logo-mixed: #0E7580;
+    
+    /* Beige Colors */
+    --dark-beige:  #ECD8B6;
+    --light-beige:  #F0EFE7;
+}
+
 /* Inner page styles */
 .page-hero {
     height: 65vh;
@@ -22,7 +33,7 @@
 
 .page-hero-content {
     text-align: center;
-    color: #ECD8B6;
+    color:  var(--dark-beige);
 }
 
 .page-hero-content h1 {
@@ -34,7 +45,7 @@
 /* Inner page content styling */
 .services-page, .facilities-page, .gallery-page, .blog-page, .careers-page, .offers-page {
     padding: 60px 80px;
-    background-color: #F0EFE7;
+    background-color:  var(--light-beige);
 }
 
 .services-page-content, .facilities-page-content, .gallery-page-content, .blog-page-content, .careers-page-content, .offers-page-content {
@@ -135,7 +146,7 @@ body {
 .hero-text h1 {
     font-size: 54px;
     line-height: 1.2;
-    color: #ECD8B6;
+    color:  var(--dark-beige);
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
 }
@@ -199,7 +210,7 @@ body {
 } */
 
 /* .tagline {
-    background-color: #F0EFE7;
+    background-color:  var(--light-beige);
     height: 360px;
 }
 
@@ -224,7 +235,7 @@ body {
 } */
 
 /* .tagline {
-    background-color: #F0EFE7;
+    background-color:  var(--light-beige);
     height: 360px;
     background-blend-mode: overlay;
     height: auto;
@@ -253,7 +264,7 @@ body {
 } */
 
 .tagline {
-    background-color: #F0EFE7;
+    background-color:  var(--light-beige);
     height: 350px;
     padding: 50px 50px; /* Adjusted padding */
     /* position: relative; */
@@ -343,7 +354,7 @@ body {
 .experience {
     width: 200px;
     height: 150px;
-    background-color: #ecd8b6;
+    background-color:  var(--dark-beige);
     color: #203c41;
     /* display: flex;
     flex-direction: column;
@@ -430,7 +441,7 @@ body {
 
 .services {
     padding: 50px 80px;
-    background-color: #F0EFE7; /* Beige background color from the screenshots */
+    background-color:  var(--light-beige); /* Beige background color from the screenshots */
     position: relative;
 }
 
@@ -555,7 +566,7 @@ body {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #ECD8B6;
+    color:  var(--dark-beige);
     
 }
 
@@ -586,7 +597,7 @@ body {
     padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #F0EFE7; /* Light beige background */
+    background-color:  var(--light-beige); /* Light beige background */
     font-family: 'Montserrat', sans-serif;
 }
 
