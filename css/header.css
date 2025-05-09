@@ -63,9 +63,17 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Keep parent nav item hover effect when hovering submenu */
+.nav-item.dropdown:hover > .nav-link,
+.dropdown-submenu:hover > .dropdown-item {
+    font-weight: 600;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
 /* Appointment button styling */
 .appointment-btn {
-    background-color: var(--logo-gray);
+    background-color: var(--logo-gray) !important;
     color: var(--dark-beige);
     font-family: 'Montserrat', sans-serif;
     width: 155px;
@@ -213,13 +221,4 @@ header {
 /* Remove or comment out this if you add the above */
 .nav-link.dropdown-toggle:hover .simple-arrow {
     transform: rotate(-135deg);
-}
-
-.nav-item.dropdown:hover > .nav-link,
-.nav-item.dropdown:focus-within > .nav-link,
-.nav-item.dropdown.show > .nav-link {
-    font-weight: 600;
-    text-decoration: underline;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
 }
