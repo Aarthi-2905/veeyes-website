@@ -167,6 +167,7 @@ header {
 .dropdown-menu {
     pointer-events: auto;
     border: none !important;
+    padding: 0 !important;
     background-color: transparent !important;
 }
 
@@ -181,4 +182,44 @@ header {
     min-height: 40px;
     display: flex;
     align-items: center;
+}
+
+.simple-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--logo-gray);
+    border-bottom: 1px solid var(--logo-gray);
+    transform: rotate(45deg);
+    margin-left: 8px;
+    transition: transform 0.2s;
+}
+
+/* Keep arrow reversed when the dropdown or its menu is hovered */
+.nav-item.dropdown:hover > .nav-link .simple-arrow,
+.nav-item.dropdown:focus-within > .nav-link .simple-arrow,
+.nav-item.dropdown.show > .nav-link .simple-arrow {
+    transform: rotate(-135deg);
+}
+
+.dropdown-item.dropdown-toggle::after{
+    display: none !important;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Remove or comment out this if you add the above */
+.nav-link.dropdown-toggle:hover .simple-arrow {
+    transform: rotate(-135deg);
+}
+
+.nav-item.dropdown:hover > .nav-link,
+.nav-item.dropdown:focus-within > .nav-link,
+.nav-item.dropdown.show > .nav-link {
+    font-weight: 600;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
