@@ -145,7 +145,8 @@ header {
     background-color: var(--light-beige);
     width: 161;
     height: 40;
-    border-radius: 5px;    
+    border-radius: 5px;  
+    margin-bottom: 1px !important;  
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
