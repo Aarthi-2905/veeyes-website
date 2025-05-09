@@ -1,92 +1,225 @@
 header {
-    background-color:  var(--dark-beige);
-    /* padding: 10px 5px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
     width: 100%;
-    border-radius: 0px 0px 25px 25px;
+    height: 75px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0 30px;
 }
 
-/* header {
-    background-color:  var(--dark-beige);
-    border-radius: 0 0 25px 25px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-} */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 189.2px; /* Fixed width to match logo's original size */
+    position: relative;
+}
 
 .navbar-brand img {
-    height: 60px;
-    width: 150px;
+    height: 87px;
+    width: 189.2px;
+    object-fit: contain;
+    margin-top: 0;
+    display: block;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-brand img:hover {
+    height: 71px;
+    width: 168px;
+    transform: none;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40px; /* Add space between logo and nav items */
 }
 
 .navbar-nav .nav-link {
-    color: #333;
-    transition: color 0.3s;
+    color: var(--logo-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0da2a9;
+    font-weight: 600;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
+/* Appointment button styling */
 .appointment-btn {
-    background-color: #203c41;
-    color: white;
-    border-radius: 5px;
+    background-color: var(--logo-gray);
+    color: var(--dark-beige);
+    font-family: 'Montserrat', sans-serif;
+    width: 155px;
+    height: 44px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.3s;
 }
 
 .appointment-btn:hover {
-    background-color: #0da2a9;
+    background-color: var(--logo-blue);
 }
 
-.logo {
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--dark-beige);
+        padding: 15px;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        width: 100%; /* Ensure nav items take full width */
+        text-align: center; /* Center-align text */
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0; /* Add spacing between items */
+        width: 100%; /* Full width for links */
+    }
+    
+    .navbar-nav .appointment-btn {
+        margin-top: 15px;
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align button */
+    }
+}
+
+/* Main dropdown: no margin on top */
+.nav-item.dropdown > .dropdown-menu {
+    margin-top: 0 !important;
+}
+
+/* Submenu: position to the right of parent */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    border-radius: 10px;
+    min-width: 200px;
+    z-index: 1050;
+    background-color: transparent !important;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    transition: none !important;
+    background-color: var(--light-beige);
+    width: 161;
+    height: 40;
+    border-radius: 5px;    
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: var(--logo-blue); /* Example highlight color */
+    border-radius: 5px;
+}
+
+/* Show main dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Keep dropdown open when hovering submenu */
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Prevent closing when moving between parent and submenu */
+.dropdown-menu {
+    pointer-events: auto;
+    border: none !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+/* Make the dropdown appear just below the text, not the whole nav item */
+.nav-item.dropdown {
+    position: relative;
+}
+
+
+.nav-item.dropdown .nav-link {
+    height: auto;
+    min-height: 40px;
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    height: 40px;
+.simple-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--logo-gray);
+    border-bottom: 1px solid var(--logo-gray);
+    transform: rotate(45deg);
+    margin-left: 8px;
+    transition: transform 0.2s;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Keep arrow reversed when the dropdown or its menu is hovered */
+.nav-item.dropdown:hover > .nav-link .simple-arrow,
+.nav-item.dropdown:focus-within > .nav-link .simple-arrow,
+.nav-item.dropdown.show > .nav-link .simple-arrow {
+    transform: rotate(-135deg);
 }
 
-nav ul li {
-    margin: 0 15px;
+.dropdown-item.dropdown-toggle::after{
+    display: none !important;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s;
+.nav-link.dropdown-toggle::after {
+    display: none !important;
 }
 
-nav ul li a:hover {
-    color: #0da2a9;
+/* Remove or comment out this if you add the above */
+.nav-link.dropdown-toggle:hover .simple-arrow {
+    transform: rotate(-135deg);
 }
 
-.appointment-btn {
-    background-color: #203c41;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.appointment-btn:hover {
-    background-color: #0da2a9;
+.nav-item.dropdown:hover > .nav-link,
+.nav-item.dropdown:focus-within > .nav-link,
+.nav-item.dropdown.show > .nav-link {
+    font-weight: 600;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }

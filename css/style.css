@@ -13,8 +13,12 @@
     --logo-mixed: #0E7580;
     
     /* Beige Colors */
-    --dark-beige:  #ECD8B6;
+    --dark-beige:  #ECD8B6; 
     --light-beige:  #F0EFE7;
+
+    --bs-light-beige: #F0EFE7;
+    --bs-dark-beige: #ECD8B6;
+    --bs-logo-gray: #183D4A;
 }
 
 /* Inner page styles */

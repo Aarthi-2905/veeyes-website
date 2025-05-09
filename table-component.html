@@ -1,0 +1,48 @@
+<!-- table-component.html -->
+<template id="service-table-template">
+    <div class="table-responsive mb-5">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td class="p-3 table_left">
+                        <slot name="left-content"></slot>
+                    </td>
+                    <td class="p-3 table_right">
+                        <slot name="right-content"></slot>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<style>
+     .table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border: none;
+        }
+
+        .table td {
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .table_left {
+            background-color: rgba(24, 61, 74) !important;
+            color: rgba(236, 216, 182) !important;
+            width: 30% !important;
+            border-width: 1px 0 0 1px;
+            border-style: solid;
+            border-color: var(--logo-gray);
+        }
+
+        .table_right {
+            background-color: rgba(236, 216, 182) !important;
+            color: rgba(24, 61, 74) !important;
+            border-width: 1px 0 0 1px;
+            border-style: solid;
+            border-color: var(--logo-gray);
+        }
+
+</style>
