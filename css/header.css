@@ -111,3 +111,74 @@ header {
         text-align: center; /* Center-align button */
     }
 }
+
+/* Main dropdown: no margin on top */
+.nav-item.dropdown > .dropdown-menu {
+    margin-top: 0 !important;
+}
+
+/* Submenu: position to the right of parent */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    border-radius: 10px;
+    min-width: 200px;
+    z-index: 1050;
+    background-color: transparent !important;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    transition: none !important;
+    background-color: var(--light-beige);
+    width: 161;
+    height: 40;
+    border-radius: 5px;    
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: var(--logo-blue); /* Example highlight color */
+    border-radius: 5px;
+}
+
+/* Show main dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Keep dropdown open when hovering submenu */
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Prevent closing when moving between parent and submenu */
+.dropdown-menu {
+    pointer-events: auto;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+/* Make the dropdown appear just below the text, not the whole nav item */
+.nav-item.dropdown {
+    position: relative;
+}
+
+
+.nav-item.dropdown .nav-link {
+    height: auto;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
